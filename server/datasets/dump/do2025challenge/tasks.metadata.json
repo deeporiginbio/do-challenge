@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"team_id":{"$numberInt":"1"},"challenge_id":{"$numberInt":"1"}},"name":"team_id_1_challenge_id_1","unique":true}],"uuid":"0a11eb8464694ffaa069a870177b6ee4","collectionName":"tasks","type":"collection"}
