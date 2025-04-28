@@ -4,7 +4,7 @@
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/Biosim-AI/do-challenge
+git clone https://github.com/deeporiginbio/do-challenge.git
 cd do-challenge/server
 ```
 
