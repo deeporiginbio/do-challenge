@@ -223,8 +223,8 @@ def get_labels(secret_key: str):
     labels_file = os.path.join(base_path, settings.CHALLENGE_NAME, "labels_df.pkl")
     mappings_file = os.path.join(base_path, settings.CHALLENGE_NAME, f"{team.name}_mappings.pkl")
     try:
-        with open(labels_file, "rb") as file:
-            df = pickle.load(file)
+        with open(labels_file, "rb") as f:
+            df = pickle.load(f)
     except Exception as e:
         raise BadRequest(f"Failed to read labels file: {str(e)}")
     try:
@@ -350,7 +350,7 @@ def benchmark(secret_key: str):
     top1000_file = os.path.join(base_path, settings.CHALLENGE_NAME, "top1000_df.pkl")
     try:
         with open(top1000_file, "rb") as f:
-            top1000_df = pickle.load(file)
+            top1000_df = pickle.load(f)
     except Exception as e:
         raise BadRequest(f"Failed to read top1000 file: {str(e)}")
     mappings_file = os.path.join(base_path, settings.CHALLENGE_NAME, f"{team.name}_mappings.pkl")
